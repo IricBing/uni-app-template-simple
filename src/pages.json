@@ -1,0 +1,18 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "demo",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "name": "app/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationBarTextStyle": "black"
+      }
+    }
+  ]
+}
