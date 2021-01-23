@@ -3441,7 +3441,7 @@ check-types@^8.0.3:
 
 "chokidar@>=2.0.0 <4.0.0":
   version "3.5.1"
-  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.1.tgz?cache=0&sync_timestamp=1610719384066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
+  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.1.tgz?cache=0&sync_timestamp=1610719440699&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
   dependencies:
     anymatch "~3.1.1"
@@ -10018,10 +10018,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.32.4:
-  version "1.32.4"
-  resolved "https://registry.npm.taobao.org/sass/download/sass-1.32.4.tgz?cache=0&sync_timestamp=1610415255306&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsass%2Fdownload%2Fsass-1.32.4.tgz#308bf29dd7f53d44ae4f06580e9a910ad9aa411e"
-  integrity sha1-MIvyndf1PUSuTwZYDpqRCtmqQR4=
+sass@^1.32.5:
+  version "1.32.5"
+  resolved "https://registry.npm.taobao.org/sass/download/sass-1.32.5.tgz?cache=0&sync_timestamp=1611117886538&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsass%2Fdownload%2Fsass-1.32.5.tgz#2882d22ad5748c05fa9bff6c3b0ffbc4f4b9e1dc"
+  integrity sha1-KILSKtV0jAX6m/9sOw/7xPS54dw=
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
