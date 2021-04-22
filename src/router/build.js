@@ -2,7 +2,7 @@ const { readdirSync, writeFile } = require('fs');
 const { join, resolve } = require('path');
 const router = require('./index.js');
 
-const builder = (app, baseUrl, children) => {
+const builder = (app, baseUrl, children, root) => {
   const routeList = [];
   for (const route of children) {
     if (route.children) routeList.push(...builder(baseUrl + route.path + '/', route.children));
@@ -19,6 +19,17 @@ const builder = (app, baseUrl, children) => {
     }
   }
 
+  // 如果是递归调用根节点，表示此时的routeList已经是完整的页面列表了，将带有home标志的元素移动到数组最开始。
+  if (root) {
+    const homePageIndex = routeList.findIndex(route => route.home);
+    if (~homePageIndex) {
+      const homePage = routeList.find(route => route.home);
+      delete homePage.home;
+      routeList.splice(homePageIndex, 1);
+      routeList.unshift(homePage);
+    }
+  }
+
   return routeList;
 };
 
@@ -26,7 +37,7 @@ const builder = (app, baseUrl, children) => {
 const buildRouter = (app, route) => {
   const { baseUrl, children } = route;
 
-  return builder(app, baseUrl, children);
+  return builder(app, baseUrl, children, true);
 };
 
 // 构建 pages

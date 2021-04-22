@@ -5,6 +5,7 @@ module.exports = {
       path: 'home',
       title: '首页',
       name: 'home',
+      home: true,
       style: {
         navigationBarTextStyle: 'black'
       }
